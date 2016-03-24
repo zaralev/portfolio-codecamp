@@ -7,12 +7,9 @@ header{
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        width: 80%;
-    }
-    #innernav {
-      padding-right:8em;
-    }
+  #innernav {
+    padding-right:8em;
+  }
     .logo {
       left: 3em !important;
     }
@@ -50,7 +47,14 @@ header{
   top:0;
   left:0;
 }
-
-#about {
+#main {
   margin-top:125px;
+}
+#about {
+  float:left;
+}
+
+#me {
+  float:right;
+  padding-bottom:2em;
 }
