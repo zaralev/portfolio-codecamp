@@ -1,52 +1,34 @@
-header{
+nav{
   background-color: #EEE;
-  width:100%;
-  height:100px;
-  padding-top:4.12em;
-  z-index:1;
-}
-
-@media screen and (min-width: 768px) {
-  #innernav {
-    padding-right:8em;
-  }
-    .logo {
-      left: 3em !important;
-    }
-}
-@media screen and (min-width: 800px) {
-  .logo {
-    left: 5em !important;
-  }
-}
-@media screen and (min-width: 850px) {
-  .logo {
-    left: 8em !important;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .logo {
-    left: 6em !important;
-  }
-}
-
-#innernav {
-  right:-4em !important;
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
-  position:fixed;
-  top:5px;
-  left: 2em;
-}
-#nav{
   position:fixed;
   top:0;
-  left:0;
+  width:100%;
 }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
 #main {
   margin-top:125px;
 }
@@ -58,3 +40,11 @@ header{
   float:right;
   padding-bottom:2em;
 }
+
+
+#zara {
+  background-color: #007aff !important;
+  text-align: center !important;
+  font-size: 12em !important;
+  font-weight: 111 !important;
+  text-shadow: #0062cc 1px 1px, #0062cc 2px 2px, #0062cc 3px 3px, #0062cd 4px 4px, #0062cd 5px 5px, #0062cd 6px 6px, #0062cd 7px 7px, #0062ce 8px 8px;
