@@ -1,8 +1,15 @@
-nav{
-  background-color: #EEE;
+header{
   position:fixed;
   top:0;
   width:100%;
+  z-index:1;
+  background-color: #FFF;
+}
+nav {
+  width: 95%;
+  text-transform:uppercase;
+  font-size: 1.4em;
+  font-family: 'Francois One', sans-serif;
 }
 
 nav ul {
@@ -10,7 +17,6 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 nav li {
@@ -19,15 +25,30 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+  color: #000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px;
   text-decoration: none;
+  transition: 0.5s all ease;
 }
 
 nav li a:hover {
-  background-color: #111;
+  color: #F00;
+  text-decoration: none;
 }
+
+.letterpress {
+  text-shadow: 1px 2px 3px #DDEEFF,
+               0 0 0 black,
+               -1px 1px 0 #DDEEFF,
+               1px 1px 0 white;
+
+  color: rgba(254, 103, 2, .8);
+  letter-spacing: -5px;
+  font-size: 6.4em;
+  font-weight: bold;
+}
+
 
 #main {
   margin-top:125px;
@@ -36,15 +57,13 @@ nav li a:hover {
   float:left;
 }
 
+#initial {
+  padding-top:5em;
+  text-align:center;
+  background-color: #EEE;
+  width: 100%;
+}
 #me {
   float:right;
   padding-bottom:2em;
 }
-
-
-#zara {
-  background-color: #007aff !important;
-  text-align: center !important;
-  font-size: 12em !important;
-  font-weight: 111 !important;
-  text-shadow: #0062cc 1px 1px, #0062cc 2px 2px, #0062cc 3px 3px, #0062cd 4px 4px, #0062cd 5px 5px, #0062cd 6px 6px, #0062cd 7px 7px, #0062ce 8px 8px;
