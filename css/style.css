@@ -6,12 +6,45 @@ header{
   z-index:1;
 }
 
-.logo {
-  position:fixed;
-  z-index:2;
-  padding: 5px;
+@media screen and (min-width: 768px) {
+    header {
+        width: 80%;
+    }
+    #innernav {
+      padding-right:8em;
+    }
+    .logo {
+      left: 3em !important;
+    }
+}
+@media screen and (min-width: 800px) {
+  .logo {
+    left: 5em !important;
+  }
+}
+@media screen and (min-width: 850px) {
+  .logo {
+    left: 8em !important;
+  }
 }
 
+@media screen and (min-width: 1000px) {
+  .logo {
+    left: 6em !important;
+  }
+}
+
+#innernav {
+  right:-4em !important;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top:5px;
+  left: 2em;
+}
 #nav{
   position:fixed;
   top:0;
