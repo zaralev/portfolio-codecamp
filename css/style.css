@@ -142,21 +142,32 @@ b {
   font-family: 'aleolight', serif !important;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width:767px) and (max-width: 990px) {
   h1 {
-    font-size: 2em !important;
+    font-size: 1em !important;
     margin-bottom: 0.2em !important;
   }
-  .desc {
-    font-size: 1.1em !important;
+  h2 {
+    font-size: 1em !important;
+  }
+  .desc{
+    font-size: 0.8em !important;
   }
 }
 
-@media screen and (min-width: 990px) {
-  h1 {
-    font-size: 1.4em !important;
-    margin-bottom: 0.2em !important;
-  }
+/* LINKS */
+span a {
+  color: #F00;
+  transition: 1s all ease;
+  text-decoration:none;
+}
+span a:hover {
+  color: #00F;
+  text-decoration:none;
+}
+
+span a:visited {
+  color:#FC0;
 }
 
 /* NAV */
@@ -215,7 +226,7 @@ nav li a:hover {
 }
 
 .active:hover{
-  color: #000;
+  color: #00F;
   text-decoration: underline;
 }
 
@@ -321,16 +332,16 @@ span.text-content {
   transition: opacity 500ms;
   height:15em;
   width:100%;
-  padding: 1em;
+  padding: 3em 1em 3em 1em;
 }
-@media screen and (min-width: 612px) {
+@media screen and (min-width: 768px) {
   span.mobile-text-content{
     visibility:hidden;
 
   }
 
 }
-@media screen and (max-width: 611px) {
+@media screen and (max-width: 767px) {
   span.text-content{
     visibility:hidden;
   }
