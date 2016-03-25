@@ -160,12 +160,20 @@ header{
 nav {
   width: 95%;
   text-transform:uppercase;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-family: 'ralewaybold', sans-serif;
 }
+
+@media screen and (max-width: 375px) {
+  nav {
+    font-size: 1.8em;
+    padding-left: 0.3em;
+  }
+}
+
 @media screen and (min-width: 612px) {
   nav {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 }
 
@@ -217,7 +225,7 @@ nav li a:hover {
 .aboutMe {
   text-align:center;
   font-size: 2em;
-  padding: 3.8em 1.2em 1.7em 1.2em;
+  padding: 4.2em 1.2em 1.7em 1.2em;
   color: #000;
   background-color: #F5F5F5;
   transition: 1s all ease;
