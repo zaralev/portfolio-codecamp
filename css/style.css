@@ -125,6 +125,7 @@ body {
   font-family: 'aleoregular', serif !important;
 
 }
+
 h1 {
   font-family: 'ralewaybold', sans-serif !important;
   font-size: 1.5em !important;
@@ -247,8 +248,8 @@ nav li a:hover {
                1px 1px 0 white;
 
   letter-spacing: -5px;
-  font-size: 9.5em;
-  padding-top:0.4em;
+  font-size: 7.3em;
+  padding-top:0.6em;
   font-weight: bold;
   color: #CF0000;
   transition: 2s all ease;
@@ -259,21 +260,28 @@ nav li a:hover {
 .letterpress:hover {
   /*empty for future use*/
 }
+@media screen and (min-width: 400px) {
+    .letterpress{
+      font-size: 9.5em;
+      padding-top:0.6em;
+    }
+}
+
 @media screen and (min-width: 612px) {
     .letterpress{
-      font-size: 13em;
+      font-size: 13em !important;
       padding-top:0.3em;
     }
 }
 @media screen and (min-width: 800px) {
     .letterpress{
-      font-size: 18em;
+      font-size: 18em !important;
       padding-top:0.2em;
     }
 }
 @media screen and (min-width: 980px) {
     .letterpress{
-      font-size: 25em;
+      font-size: 22em !important;
       padding-top:0.1em;
     }
 }
@@ -297,12 +305,18 @@ nav li a:hover {
   margin-top: -0.83em;
   margin-left:0em;
   margin-bottom:0em;
-  font-size:7.5em;
+  font-size:6.3em;
   text-align:center;
   color:#000;
   opacity: 0.8;
   letter-spacing: 0.03em;
   transition: 2s all ease;
+}
+
+@media screen and (min-width: 400px) {
+    .letterpress{
+      font-size:7.5em;
+    }
 }
 
 @media screen and (min-width: 612px) {
@@ -317,7 +331,7 @@ nav li a:hover {
 }
 @media screen and (min-width: 980px) {
     .lastName{
-      font-size:20em;
+      font-size:18em;
     }
 }
 
