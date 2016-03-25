@@ -1,3 +1,4 @@
+/* NAV */
 header{
   position:fixed;
   top:0;
@@ -36,7 +37,18 @@ nav li a:hover {
   color: #F00;
   text-decoration: none;
 }
+/* NAV LINKS */
+.active {
+  color: #F00;
+  text-decoration: underline;
+}
 
+.active:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ZARA */
 .letterpress {
   text-shadow: 1px 2px 3px #BBB,
                0 0 0 black,
@@ -55,7 +67,6 @@ nav li a:hover {
       padding-top:0.3em;
     }
 }
-
 @media screen and (min-width: 800px) {
     .letterpress{
       font-size: 18em;
@@ -69,20 +80,14 @@ nav li a:hover {
     }
 }
 
-#main {
-  margin-top:1em;
-}
-#about {
-  float:left;
-}
-
 #initial {
   padding:0;
   text-align:center;
   background-color: #F5F5F5;
   width: 100%;
 }
-#me {
-  float:right;
-  padding-bottom:2em;
+
+/* PORTFOLIO */
+#main {
+  margin-top:1em;
 }
