@@ -9,8 +9,13 @@ header{
 nav {
   width: 95%;
   text-transform:uppercase;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: 'Francois One', sans-serif;
+}
+@media screen and (min-width: 612px) {
+  nav {
+    font-size: 1.4em;
+  }
 }
 
 nav ul {
@@ -28,9 +33,14 @@ nav li a {
   display: block;
   color: #000;
   text-align: center;
-  padding: 20px;
+  padding: 20px 15px 20px 0px;
   text-decoration: none;
   transition: 0.5s all ease;
+}
+
+.icon {
+  padding: 20px 15px 20px 0px !important;
+  margin: 0 !important;
 }
 
 nav li a:hover {
@@ -90,4 +100,10 @@ nav li a:hover {
 /* PORTFOLIO */
 #main {
   margin-top:1em;
+}
+
+.port {
+  padding: 2em;
+  margin-bottom:1em;
+  text-align:center;
 }
