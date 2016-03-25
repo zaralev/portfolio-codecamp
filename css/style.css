@@ -107,3 +107,46 @@ nav li a:hover {
   margin-bottom:1em;
   text-align:center;
 }
+
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+span.text-content {
+  background: rgba(0,0,0,0.9);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  height:15em;
+  width:100%;
+}
+@media screen and (min-width: 612px) {
+  span.mobile-text-content{
+    visibility:hidden;
+  }
+}
+@media screen and (max-width: 611px) {
+  span.text-content{
+    visibility:hidden;
+  }
+}
