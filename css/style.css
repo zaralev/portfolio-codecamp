@@ -107,6 +107,18 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'bromello';
+    src: url('../fonts/bromello-webfont.eot');
+    src: url('../fonts/bromello-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bromello-webfont.woff2') format('woff2'),
+         url('../fonts/bromello-webfont.woff') format('woff'),
+         url('../fonts/bromello-webfont.ttf') format('truetype'),
+         url('../fonts/bromello-webfont.svg#bromelloregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* TEXT */
 body {
@@ -166,9 +178,6 @@ span a:hover {
   text-decoration:none;
 }
 
-span a:visited {
-  color:#FC0;
-}
 
 /* NAV */
 header{
@@ -238,7 +247,7 @@ nav li a:hover {
                1px 1px 0 white;
 
   letter-spacing: -5px;
-  font-size: 10em;
+  font-size: 9.5em;
   padding-top:0.4em;
   font-weight: bold;
   color: #CF0000;
@@ -281,18 +290,56 @@ nav li a:hover {
   /*empty for future use*/
 }
 
+/* LEVENTHAL */
+.lastName {
+  font-family: 'bromello' , sans-serif;
+  padding:0;
+  margin-top: -0.83em;
+  margin-left:0em;
+  margin-bottom:0em;
+  font-size:7.5em;
+  text-align:center;
+  color:#000;
+  opacity: 0.8;
+  letter-spacing: 0.03em;
+  transition: 2s all ease;
+}
+
+@media screen and (min-width: 612px) {
+    .lastName{
+      font-size: 10.3em;
+    }
+}
+@media screen and (min-width: 800px) {
+    .lastName{
+      font-size: 14.2em;
+    }
+}
+@media screen and (min-width: 980px) {
+    .lastName{
+      font-size:20em;
+    }
+}
+
 /* PORTFOLIO */
 #main {
   margin-top:1em;
 }
 
 .port {
-  padding: 2em;
-  margin-bottom:1em;
   text-align:center;
   transition: 0.5s all ease;
+  margin: 0 !important;
 }
 
+.image {
+  margin-bottom:2em;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    margin-bottom:-19em;
+  }
+}
 
 /* DESCRIPTION */
 span.text-content span {
@@ -302,8 +349,8 @@ span.text-content span {
 }
 ul.img-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   text-align: center;
 }
 
@@ -348,4 +395,34 @@ span.text-content {
   ul.img-list li:hover img {
     opacity: 1;
   }
+}
+
+/* FOOTER */
+.rowLast {
+  margin-bottom:2em;
+}
+@media screen and (min-width: 768px) {
+  .rowLast {
+    margin-bottom:5em;
+  }
+}
+
+footer {
+  width:100%;
+  height:5em;
+  background-color: #FFF;
+  color:#000;
+  padding:2em;
+  font-family: 'ralewaybold', sans-serif !important;
+  text-transform: uppercase;
+  transition: 1s all ease;
+}
+
+footer:hover{
+  /* Empty for later */
+}
+
+#copyright {
+  text-align:center;
+  margin:auto;
 }
