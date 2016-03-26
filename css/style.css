@@ -408,7 +408,8 @@ span.text-content {
   transition: opacity 500ms;
   height:15em;
   width:100%;
-  padding: 3em 1em 3em 1em;
+  padding: 3em 1em 2em 1em;
+  z-index:3;
 }
 @media screen and (min-width: 768px) {
   span.mobile-text-content{
@@ -425,6 +426,7 @@ span.text-content {
     opacity: 1;
   }
 }
+
 
 /* FOOTER */
 .rowLast {
@@ -454,4 +456,13 @@ footer:hover{
 #copyright {
   text-align:center;
   margin:auto;
+}
+
+
+.project{
+  color:#00aced;
+}
+
+.project:hover{
+  color:#D00;
 }
